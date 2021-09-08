@@ -1,0 +1,4 @@
+- 👋 Hi, I’m @GilbertKrantz
+- 👀 I’m interested in Data Science
+- 🌱 I’m currently an Indonesian High School Student in my Final year
+- 📫 Reach me by email wilbertchandra.official@gmail.com
