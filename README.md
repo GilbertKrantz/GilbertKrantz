@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @GilbertKrantz
 - 😄 My real name is Wilbert Chandra
 - 👀 I’m interested in Data Science
-- 🌱 I’m currently an Indonesian High School Student in my Final year
+- 🌱 I’m currently an University Student Majoring in Data Science in Binus University 
 - 📫 Reach me by email wilbertchandra.official@gmail.com
