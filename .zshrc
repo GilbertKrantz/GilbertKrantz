@@ -115,8 +115,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ls="eza --icons=always"
-alias cd="z
-
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -134,7 +132,7 @@ setopt hist_verify
 export PATH="/home/wilbert_ch/.pixi/bin:$PATH"
 export FPATH="~/setup/eza/completions/zsh:$FPATH"
 
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 # fnm
 FNM_PATH="/home/wilbert_ch/.local/share/fnm"
@@ -146,3 +144,19 @@ fi
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
   tmux attach-session -t default || tmux new-session -s default
 fi
+
+if command -v neofetch; then
+  clear
+  neofetch
+fi
+
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# pnpm
+export PNPM_HOME="/home/wilbert_ch/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
